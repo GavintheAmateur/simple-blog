@@ -1,0 +1,14 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color:gray;
+    
+    font: bold  sans-serif;
+    border-bottom: thin tomato;
+    
+}
+

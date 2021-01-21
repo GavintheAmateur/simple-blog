@@ -1,0 +1,79 @@
+@import url(navbar.css);
+@import url(footer.css);
+@import url(typography.css);
+
+body {
+    display: grid;
+    grid-template-rows: repeat(20, 5vw);
+    grid-template-columns: repeat(20, 5vw);
+}
+
+.navbar {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 21;
+}
+.head {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 21;
+
+    background: url(../img/sunrise.jpg) center;
+    background-size: cover;
+
+    padding: 1rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.left-sidebar {
+    grid-row-start: 2;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-area: lb;
+    background-color: green;
+}
+
+.main {
+    grid-row-start: 5;
+    grid-row-end: 20;
+    grid-column-start: 5;
+    grid-column-end: 17;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.blogcard {
+    border: 1px solid red;
+}
+
+.blogcard-thumbnail-image {
+    width: 100px;
+    height: 100px;
+}
+
+.right-sidebar {
+    grid-row-start: 2;
+    grid-row-end: 10;
+    grid-column-start: 17;
+    grid-column-end: 21;
+    grid-area: rb;
+    background-color: red;
+}
+
+.footer {
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-area: f;
+    background-color: yellow;
+}
+
+.component {
+}
