@@ -1,79 +1,80 @@
 @import url(navbar.css);
 @import url(footer.css);
+@import url(blogcard.css);
 @import url(typography.css);
 
 body {
+
     display: grid;
-    grid-template-rows: repeat(20, 5vw);
+    grid-template-rows: repeat(20, 5vh);
     grid-template-columns: repeat(20, 5vw);
 }
 
-.navbar {
-    grid-row-start: 3;
+
+.head {
+    grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 21;
-}
-.head {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 21;
+    height: 7rem;
 
     background: url(../img/sunrise.jpg) center;
     background-size: cover;
 
     padding: 1rem;
-    color: white;
     font-size: 3rem;
 }
+.navbar {
+
+    grid-column-start: 1;
+    grid-column-end: 21;
+}
+
 
 .left-sidebar {
-    grid-row-start: 2;
-    grid-row-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 19;
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-area: lb;
+
     background-color: green;
 }
 
 .main {
     grid-row-start: 5;
-    grid-row-end: 20;
-    grid-column-start: 5;
-    grid-column-end: 17;
+    grid-row-end: 19;
+    grid-column-start: 3;
+    grid-column-end: 19;
     background-color: white;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.blogcard {
-    border: 1px solid red;
+.main-full {
+    overflow: scroll;
 }
 
-.blogcard-thumbnail-image {
-    width: 100px;
-    height: 100px;
-}
 
 .right-sidebar {
-    grid-row-start: 2;
-    grid-row-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 19;
     grid-column-start: 17;
     grid-column-end: 21;
-    grid-area: rb;
     background-color: red;
 }
 
-.footer {
-    grid-row-start: 10;
-    grid-row-end: 11;
-    grid-column-start: 1;
-    grid-column-end: 11;
-    grid-area: f;
-    background-color: yellow;
-}
 
-.component {
+.footer {
+    grid-row-start: 19;
+    grid-row-end: 21;
+    grid-column-start: 1;
+    grid-column-end: 21;
 }

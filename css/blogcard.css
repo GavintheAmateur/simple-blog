@@ -1,0 +1,54 @@
+
+.blogcard {
+    display: grid;
+    grid-template-rows: repeat(10,10%);
+    grid-template-columns: repeat(10,10%);
+
+    background-color: lightgray;
+
+    height: 12rem;
+    width: 40rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+.blogcard-title {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    font: 
+}
+
+.blogcard-thumbnail {
+    grid-row-start: 4;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.blogcard-thumbnail-image {
+
+    width: 8rem;
+    height: 8rem;
+}
+.blogcard-description {
+    grid-row-start: 3;
+    grid-row-end: 10;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    overflow:hidden;
+
+}
+
+.blogcard-readmore {
+
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 4;
+    grid-column-end: 11;
+
+    display: inline;
+    background-color: transparent;
+    border: none;
+}
