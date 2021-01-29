@@ -1,0 +1,18 @@
+h2 {
+    font: bold 200% Times;
+    margin: 0;
+}
+h3 {
+    font: bold 150% Times;
+    margin: 0;
+}
+
+p,
+pre {
+    font: normal large Georgia;
+}
+
+a {
+    color: black;
+    font: italic small arial;
+}

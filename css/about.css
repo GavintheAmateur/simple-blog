@@ -1,0 +1,36 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(blogcard.css);
+@import url(typography.css);
+
+body {
+    display: grid;
+    grid-template-rows: repeat(20, 5vh);
+    grid-template-columns: repeat(20, 5vw);
+}
+
+.header {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 21;
+}
+
+.header-navbar {
+    grid-column-start: 1;
+    grid-column-end: 21;
+}
+
+.main {
+    grid-row-start: 5;
+    grid-row-end: 19;
+    grid-column-start: 5;
+    grid-column-end: 17;
+}
+
+.footer {
+    grid-row-start: 19;
+    grid-row-end: 21;
+    grid-column-start: 1;
+    grid-column-end: 21;
+}
