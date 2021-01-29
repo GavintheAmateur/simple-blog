@@ -1,18 +1,60 @@
-h2 {
-    font: bold 200% Times;
-    margin: 0;
-}
-h3 {
-    font: bold 150% Times;
-    margin: 0;
-}
+@media (max-width: 768px) {
+    h2 {
+        font: bold 150% Times;
+        margin: 0;
+    }
+    h3 {
+        font: bold 100% Times;
+        margin: 0;
+    }
 
-p,
-pre {
-    font: normal large Georgia;
-}
+    p,
+    pre {
+        font-size: small;
+    }
 
-a {
-    color: black;
-    font: italic small arial;
+    a {
+        font: italic small arial;
+        color: brown;
+    }
+
+    .header-navbar a {
+        font-size: 100%;
+        text-decoration-line: none;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        color: rgba(8, 58, 66, 0.81);
+    }
+}
+@media (min-width: 768px) {
+    h2 {
+        font: bold 200% Times;
+        margin: 0;
+    }
+    h3 {
+        font: bold 150% Times;
+        margin: 0;
+    }
+
+    p,
+    pre {
+        font: normal large Georgia;
+    }
+
+    a {
+        font: italic small arial;
+        color: brown;
+    }
+
+    .header-navbar a {
+        font-size: 150%;
+        text-decoration-line: none;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        color: rgba(8, 58, 66, 0.81);
+    }
 }

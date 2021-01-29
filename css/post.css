@@ -60,11 +60,7 @@ body {
     list-style-type: circle;
 }
 .catalog li {
-    padding: 0.2rem 0;
-}
-
-.catalog li a {
-    color: black;
+    margin: 1rem 0;
 }
 
 .footer {
