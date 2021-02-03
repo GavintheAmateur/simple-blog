@@ -14,11 +14,7 @@ figcaption {
         font: bold 100% Times;
         margin: 0;
     }
-
-    p,
-    pre {
-        font-size: small;
-    }
+ 
 
     a {
         font: italic small arial;

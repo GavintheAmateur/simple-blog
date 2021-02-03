@@ -3,14 +3,13 @@ import { insertFragment } from './common.js';
 const left_sidebar_html = `
 <section class="left-sidebar">
 
-<div class="catalog"></div>
 <div class="author">
     <img   alt="avatar" class="author-avatar" src="/img/avatar.jpeg">
-</div>
-<div class='author-info'>
+    <div class='author-info'>
     <div class='author-info-name'><b>Gavin</b></div>
     <div class='author-info-title'><em>Engineer</em></div>
     <div class='author-info-bio'><blockquote cite="https://en.wikipedia.org/wiki/Know_thyself">--Know thyself.</blockquote></div>
+    </div>
 </div>
 
 </section>

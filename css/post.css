@@ -27,8 +27,8 @@ body {
 }
 
 .author-avatar {
-    width: 100px;
-    height: 100px;
+    width: 5rem;
+    height: 5rem;
     margin: auto;
     border-radius: 50%;
 }
@@ -138,14 +138,52 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
     .left-sidebar {
-        display: none;
+
+        height: 4rem;
+        margin: 0 0 0 3rem;
+        padding:0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+
+    .author {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .author-avatar {
+        width: 3rem;
+        height: 3rem;
+        margin: auto;
+        border-radius: 50%;
+    }
+
+    .author-info {
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: block;
+    }
+
     .right-sidebar {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
     }
-    .main {
-        grid-column-start: 1;
-        grid-column-end: 21;
+    
+    .catalog {
+        width: 100%;
+        list-style-type: circle;
     }
 }
